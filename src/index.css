@@ -1,3 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+.active {
+  text-decoration: underline !important;
+  color: #ff444a !important;
+  background: none !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+.Health-donate {
+  background-color: #0052ff;
+}
+.Health-donate:hover {
+  background-color: #0544cc;
+}
+.Education-donate {
+  background-color: #ff444a;
+}
+.Education-donate:hover {
+  background-color: #962b2e;
+}
+.Clothing-donate {
+  background-color: #79c23f;
+}
+.Clothing-donate:hover {
+  background-color: #64ab29;
+}
+.Food-donate {
+  background-color: #f87147;
+}
+.Food-donate:hover {
+  background-color: #a54224;
+}

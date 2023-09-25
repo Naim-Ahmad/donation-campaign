@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "picture": "item1.jpg",
+    "picture": "https://i.ibb.co/SVhJnqw/Clothing.png",
     "title": "Donate Warm Clothes",
     "category": "Clothing",
     "category_bg_color": "#79C23F",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "picture": "item2.jpg",
+    "picture": "https://i.ibb.co/WsTTg7p/Health.png",
     "title": "Support Health Initiatives",
     "category": "Health",
     "category_bg_color": "#0052FF33",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "picture": "item3.jpg",
+    "picture": "https://i.ibb.co/6R8T0cr/Education.png",
     "title": "Educational Scholarships",
     "category": "Education",
     "category_bg_color": "#FF444A33",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "picture": "item4.jpg",
+    "picture": "https://i.ibb.co/T2P7MCC/Food.png",
     "title": "Feed the Hungry",
     "category": "Food",
     "category_bg_color": "#F8714733",
@@ -45,9 +45,9 @@
   },
   {
     "id": 5,
-    "picture": "item5.jpg",
+    "picture": "https://i.ibb.co/SVhJnqw/Clothing.png",
     "title": "Emergency Relief Fund",
-    "category": "Humanitarian",
+    "category": "Health",
     "category_bg_color": "#F8714733",
     "card_bg_color": "#F8714726",
     "text_button_bg_color": "#F87147",
@@ -56,9 +56,9 @@
   },
   {
     "id": 6,
-    "picture": "item6.jpg",
+    "picture": "https://i.ibb.co/T2P7MCC/Food.png",
     "title": "Environmental Conservation",
-    "category": "Environment",
+    "category": "Health",
     "category_bg_color": "#F8714733",
     "card_bg_color": "#F8714726",
     "text_button_bg_color": "#F87147",
@@ -67,9 +67,9 @@
   },
   {
     "id": 7,
-    "picture": "item7.jpg",
+    "picture": "https://i.ibb.co/MBXRGdF/images.jpg",
     "title": "Disaster Preparedness",
-    "category": "Humanitarian",
+    "category": "Health",
     "category_bg_color": "#F8714733",
     "card_bg_color": "#F8714726",
     "text_button_bg_color": "#F87147",
@@ -78,7 +78,7 @@
   },
   {
     "id": 8,
-    "picture": "item8.jpg",
+    "picture": "https://i.ibb.co/j68Kgpy/clean-water.jpg",
     "title": "Clean Water Access",
     "category": "Health",
     "category_bg_color": "#0052FF33",
@@ -89,7 +89,7 @@
   },
   {
     "id": 9,
-    "picture": "item9.jpg",
+    "picture": "https://i.ibb.co/6R8T0cr/Education.png",
     "title": "Literacy Programs",
     "category": "Education",
     "category_bg_color": "#FF444A33",
@@ -100,7 +100,7 @@
   },
   {
     "id": 10,
-    "picture": "item10.jpg",
+    "picture": "https://i.ibb.co/T2P7MCC/Food.png",
     "title": "Food for Families",
     "category": "Food",
     "category_bg_color": "#F8714733",
@@ -111,7 +111,7 @@
   },
   {
     "id": 11,
-    "picture": "item11.jpg",
+    "picture": "https://i.ibb.co/sKGKWBP/Winter-Clothes-Vocabulary-in-English.jpg",
     "title": "Warmth for Winter",
     "category": "Clothing",
     "category_bg_color": "#79C23F33",
@@ -122,7 +122,7 @@
   },
   {
     "id": 12,
-    "picture": "item12.jpg",
+    "picture": "https://i.ibb.co/Lpdr8js/Medical-Supply-or-Equipment.jpg",
     "title": "Medical Supplies",
     "category": "Health",
     "category_bg_color": "#0052FF33",

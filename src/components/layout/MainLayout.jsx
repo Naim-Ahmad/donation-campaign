@@ -5,7 +5,7 @@ export default function MainLayout() {
     return (
       <>
             <Navbar/>
-            <div>
+            <div className="max-w-[1400px] px-8 mx-auto">
                 <Outlet/>
             </div>
       </>
