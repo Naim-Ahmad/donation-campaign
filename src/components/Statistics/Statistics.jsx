@@ -1,15 +1,25 @@
-import React from 'react';
+
+import { useEffect, useState } from 'react';
 import { Cell, Pie, PieChart } from 'recharts';
+import { getDonation } from '../../utilities/localstorage';
 
 export default function Statistics() {
-  const data = [
-  { name: 'Group A', value: 400 },
-  { name: 'Group B', value: 300 },
-  { name: 'Group C', value: 300 },
-  { name: 'Group D', value: 200 },
-];
+  const [data, setData] = useState([
+    { name: 'Total Donation', value: 12 },
+    { name: 'Your Donation', value: 0 }
+  ])
 
-const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  useEffect(() => {
+    const donationID = getDonation()
+    if (data[1].value != donationID.length) {
+      const newData = [...data]
+      newData[0].value = newData[0].value - donationID.length;
+      newData[1].value = donationID.length;
+      setData(newData)
+    }
+  }, [])
+  
+const COLORS = ['#FF444A', '#00C49F'];
   const RADIAN = Math.PI / 180;
 const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
@@ -24,8 +34,9 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
   
   return (
-    
-        <PieChart width={400} height={400}>
+    <>
+    <div className='flex justify-center'>
+      <PieChart width={400} height={400}>
           <Pie data={data}
             cx="50%"
             cy="50%"
@@ -33,11 +44,18 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
             label={renderCustomizedLabel}
             outerRadius={80}
             fill="#8884d8"
-            dataKey="value"/>
+            dataKey="value">
           {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+              <Cell key={`cell-${index}`} fill={COLORS[index]} />
             ))}
-        </PieChart>
-  
+            </Pie>
+      </PieChart>
+      
+      </div>
+       <div className='text-center flex justify-center gap-10'>
+        <p>Your Donation <span className='donation-color'></span></p>
+        <p>Total Donation <span className='total-donation-color'></span></p>
+      </div>
+  </>
   )
 }

@@ -74,3 +74,16 @@ nav ul li {
 .Clothing .tag {
   background: rgba(121, 194, 63, 0.2);
 }
+
+.donation-color,
+.total-donation-color {
+  display: inline-block;
+  width: 80px;
+  height: 10px;
+}
+.donation-color {
+  background-color: #00c49f;
+}
+.total-donation-color {
+  background-color: #ff444a;
+}
