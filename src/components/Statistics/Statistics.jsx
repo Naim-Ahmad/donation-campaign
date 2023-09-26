@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { Cell, Pie, PieChart } from 'recharts';
+import { Cell, Pie, PieChart, Tooltip } from 'recharts';
 import { getDonation } from '../../utilities/localstorage';
 
 export default function Statistics() {
@@ -35,8 +35,9 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
   
   return (
     <>
-    <div className='flex justify-center'>
-      <PieChart width={400} height={400}>
+    <div className='flex justify-center items-center'>
+        <PieChart width={400} height={400}>
+          <Tooltip />
           <Pie data={data}
             cx="50%"
             cy="50%"
@@ -44,7 +45,8 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
             label={renderCustomizedLabel}
             outerRadius={80}
             fill="#8884d8"
-            dataKey="value">
+            dataKey="value"
+          >
           {data.map((entry, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index]} />
             ))}
@@ -52,7 +54,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
       </PieChart>
       
       </div>
-       <div className='text-center flex justify-center gap-10'>
+       <div className='text-center md:flex justify-center gap-10'>
         <p>Your Donation <span className='donation-color'></span></p>
         <p>Total Donation <span className='total-donation-color'></span></p>
       </div>

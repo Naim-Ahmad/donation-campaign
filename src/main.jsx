@@ -6,12 +6,14 @@ import Details from './components/details/Details.jsx'
 import Donation from './components/donation/Donation.jsx'
 import Home from './components/home/Home.jsx'
 import MainLayout from './components/layout/MainLayout.jsx'
+import NotFound from './components/notFound/notFound.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <MainLayout />,
+    errorElement: <NotFound/>,
     children: [
       {
         path: '/',

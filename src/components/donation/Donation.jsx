@@ -27,12 +27,15 @@ export default function Donation() {
   
   return (
     <section>
-      <div className='grid grid-cols-2 gap-8 my-10'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 my-10'>
         {data.slice(0, slice).map(item => <Card key={item.id} data={item}/>)}
       </div>
-      <div className='text-center mt-8'>
+      {
+        data.length > 0 ? <div className='text-center mt-8'>
         {data.length > 4 && data.length !== slice && <button onClick={handleClick} className='btn text-white hover:bg-[#1d6b42] bg-[#009444] '>Show All</button>}
-      </div>
+      </div> : <div className='text-4xl font-bold text-center'> No Donation here</div>
+      }
+      
     </section>
   )
 }
